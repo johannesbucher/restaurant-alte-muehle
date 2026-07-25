@@ -40,6 +40,20 @@
 </header>
 
 <section class="hero">
+  <div class="hero-bg">
+    <img src="pictures/galerie/b257bf2e-276b-4570-9abd-5dac0fc9400a.jpg" class="hero-bg-img active" alt="">
+    <img src="pictures/galerie/f2fa04a3-8760-4892-a5e3-02a57ac8311f.jpg" class="hero-bg-img" alt="">
+    <img src="pictures/galerie/65ddd758-11f8-428f-9064-cf049e84323e.jpg" class="hero-bg-img" alt="">
+    <img src="pictures/galerie/b68692f9-37d5-4e6b-8525-2e407a3215ae.jpg" class="hero-bg-img" alt="Bild 2">
+    <img src="pictures/galerie/c1bb4e3f-920f-47ab-b1a6-8c3b779eff9e.jpg" class="hero-bg-img" alt="Bild 3">
+    <img src="pictures/galerie/c23c99f3-7e12-44d2-ae15-266cf6287e44.jpg" class="hero-bg-img" alt="Bild 4">
+    <img src="pictures/galerie/c694ae17-88f6-4533-8d5b-229b120d3130.JPG" class="hero-bg-img" alt="Bild 5">
+    <img src="pictures/galerie/ca472386-0b77-4212-857c-9810abe5e41e.jpg" class="hero-bg-img" alt="Bild 6">
+    <img src="pictures/galerie/db5d1e59-4866-4b55-b6c5-62f4a9842ee7.jpg" class="hero-bg-img" alt="Bild 7">
+    <img src="pictures/galerie/e1adeaa3-cf4f-44e0-8039-e6092b40dc69.jpg" class="hero-bg-img" alt="Bild 8">
+    <img src="pictures/galerie/e47ef94d-1d72-4f54-bfe3-cb804793fbbe.jpg" class="hero-bg-img" alt="Bild 9">
+  </div>
+
   <div class="hero-inner">
     <span class="eyebrow">Herzlich willkommen</span>
     <h1>Restaurant Alte Mühle</h1>
@@ -171,5 +185,22 @@
     document.getElementById('main-nav').classList.toggle('open');
   });
 </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const heroImages = document.querySelectorAll('.hero-bg-img');
+    let current = 0;
+
+    if (!heroImages.length) return;
+
+    setInterval(() => {
+      heroImages[current].classList.remove('active');
+      current = (current + 1) % heroImages.length;
+      heroImages[current].classList.add('active');
+    }, 5000);
+  });
+</script>
+
+
 </body>
 </html>
