@@ -243,10 +243,13 @@ nav.main-nav a.active {
   inset: 0;
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
   opacity: 0;
   transition: opacity 1.2s ease;
   filter: brightness(0.7);
+  will-change: opacity;
+  transform: translateZ(0);
 }
 
 .hero-bg-img.active {
@@ -258,6 +261,7 @@ nav.main-nav a.active {
   inset: 0;
   background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.35));
   z-index: 1;
+  pointer-events: none;
 }
 
 .hero-inner {
@@ -268,6 +272,7 @@ nav.main-nav a.active {
   padding: 100px 24px;
   color: var(--white);
 }
+
 
 .hero .eyebrow { color: var(--brass-light); }
 

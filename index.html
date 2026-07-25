@@ -189,7 +189,7 @@
 </script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
+  function initHeroSlideshow() {
     const heroImages = document.querySelectorAll('.hero-bg-img');
     let current = 0;
 
@@ -200,8 +200,15 @@
       current = (current + 1) % heroImages.length;
       heroImages[current].classList.add('active');
     }, 5000);
-  });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initHeroSlideshow);
+  } else {
+    initHeroSlideshow();
+  }
 </script>
+
 
 </body>
 </html>
