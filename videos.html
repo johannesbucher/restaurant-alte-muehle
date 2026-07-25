@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Videos&amp;Clips | Restaurant Alte Mühle</title>
-<meta name="description" content="Kochvideos und Eindrücke aus der Alten Mühle mit Sabine Krapf.">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos&amp;Clips | Restaurant Alte Mühle</title>
+  <meta name="description" content="Kochvideos und Eindrücke aus der Alten Mühle mit Sabine Krapf.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -49,26 +49,139 @@
 
 <section>
   <div class="container">
+
+    <!--
+      SO FÜGST DU EIN VIDEO EIN:
+      1. Video auf YouTube öffnen -> "Teilen" -> "Einbetten" -> die Video-ID kopieren
+         (das ist der Teil aus der URL nach /embed/, z. B. bei
+         https://www.youtube.com/embed/WC_Gx27LCWA die ID "WC_Gx27LCWA")
+      2. Unten bei der passenden Karte "HIER-VIDEO-ID-EINFÜGEN" durch genau diese ID ersetzen.
+      3. Fertig - der Rest (Grösse, Rahmen) passt sich automatisch an.
+    -->
+
     <div class="grid-3">
-      <div class="video-card"><div class="img-placeholder"><div class="play-badge">▶</div></div><div class="card-body"><h3>Flanksteak</h3><p>Sabine Krapf</p></div></div>
-      <div class="video-card"><div class="img-placeholder"><div class="play-badge">▶</div></div><div class="card-body"><h3>Wildschwein Ragout</h3><p>Sabine Krapf</p></div></div>
-      <div class="video-card"><div class="img-placeholder"><div class="play-badge">▶</div></div><div class="card-body"><h3>New Look</h3><p>Sabine Krapf</p></div></div>
-      <div class="video-card"><div class="img-placeholder"><div class="play-badge">▶</div></div><div class="card-body"><h3>Rotkraut … oder Herbstteller!</h3><p>Sabine Krapf</p></div></div>
-      <div class="video-card"><div class="img-placeholder"><div class="play-badge">▶</div></div><div class="card-body"><h3>Willkommen</h3><p>Sabine Krapf</p></div></div>
-      <div class="video-card"><div class="img-placeholder"><div class="play-badge">▶</div></div><div class="card-body"><h3>Peti's Bouillabaisse</h3><p>Sabine Krapf</p></div></div>
-      <div class="video-card"><div class="img-placeholder"><div class="play-badge">▶</div></div><div class="card-body"><h3>Rumtopf</h3><p>Sabine Krapf</p></div></div>
-      <div class="video-card"><div class="img-placeholder"><div class="play-badge">▶</div></div><div class="card-body"><h3>Rösti</h3><p>Sabine Krapf</p></div></div>
-      <div class="video-card"><div class="img-placeholder"><div class="play-badge">▶</div></div><div class="card-body"><h3>Alte Mühle im Fernsehen</h3><p>Sabine Krapf</p></div></div>
-      <div class="video-card"><div class="img-placeholder"><div class="play-badge">▶</div></div><div class="card-body"><h3>Peti's BBQ Sauce</h3><p>Sabine Krapf</p></div></div>
-      <div class="video-card"><div class="img-placeholder"><div class="play-badge">▶</div></div><div class="card-body"><h3>Heideschnuckenbrust gefüllt mit Feta &amp; Pistazien</h3><p>Sabine Krapf</p></div></div>
-      <div class="video-card"><div class="img-placeholder"><div class="play-badge">▶</div></div><div class="card-body"><h3>Peti's Cremeschnitte</h3><p>Sabine Krapf</p></div></div>
-      <div class="video-card"><div class="img-placeholder"><div class="play-badge">▶</div></div><div class="card-body"><h3>Bouillon: geschwärzte Zwiebel, Lorbeer &amp; Pfefferkörner</h3><p>Sabine Krapf</p></div></div>
-      <div class="video-card"><div class="img-placeholder"><div class="play-badge">▶</div></div><div class="card-body"><h3>Garten</h3><p>Sabine Krapf</p></div></div>
-      <div class="video-card"><div class="img-placeholder"><div class="play-badge">▶</div></div><div class="card-body"><h3>Muschel kochen</h3><p>Sabine Krapf</p></div></div>
+
+      <!-- Flanksteak -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/WC_Gx27LCWA?si=BZqYanrWPVc4S0yE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body"><h3>Flanksteak</h3><p>Sabine Krapf</p></div>
+      </div>
+
+      <!-- Wildschwein Ragout -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/I9zM75poPDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body"><h3>Wildschwein Ragout</h3><p>Sabine Krapf</p></div>
+      </div>
+
+      <!-- New Look -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/O8deuMSB_IU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body"><h3>New Look</h3><p>Sabine Krapf</p></div>
+      </div>
+
+      <!-- Rotkraut ... oder Herbstteller! -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/J60pqHLVmyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body"><h3>Rotkraut … oder Herbstteller!</h3><p>Sabine Krapf</p></div>
+      </div>
+
+      <!-- Willkommen -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/Mwz2wujI6f0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body"><h3>Willkommen</h3><p>Sabine Krapf</p></div>
+      </div>
+
+      <!-- Peti's Bouillabaisse -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/k8WyPrBKHsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body"><h3>Peti's Bouillabaisse</h3><p>Sabine Krapf</p></div>
+      </div>
+
+      <!-- Rumtopf -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/TrYruJUazXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body"><h3>Rumtopf</h3><p>Sabine Krapf</p></div>
+      </div>
+
+      <!-- Rösti -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/0uW-caErvNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body"><h3>Rösti</h3><p>Sabine Krapf</p></div>
+      </div>
+
+      <!-- Alte Mühle im Fernsehen -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/DK9CYLi4W-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body"><h3>Alte Mühle im Fernsehen</h3><p>Sabine Krapf</p></div>
+      </div>
+
+      <!-- Peti's BBQ Sauce -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/N4JVItAN6Eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body"><h3>Peti's BBQ Sauce</h3><p>Sabine Krapf</p></div>
+      </div>
+
+      <!-- Heideschnuckenbrust gefüllt mit Feta & Pistazien -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/AjNiVzEdhgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body"><h3>Heideschnuckenbrust gefüllt mit Feta &amp; Pistazien</h3><p>Sabine Krapf</p></div>
+      </div>
+
+      <!-- Peti's Cremeschnitte -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/06Z13oRIKyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body"><h3>Peti's Cremeschnitte</h3><p>Sabine Krapf</p></div>
+      </div>
+
+      <!-- Bouillon: geschwärzte Zwiebel, Lorbeer & Pfefferkörner -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/yfGf15OYBzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body"><h3>Bouillon: geschwärzte Zwiebel, Lorbeer &amp; Pfefferkörner</h3><p>Sabine Krapf</p></div>
+      </div>
+
+      <!-- Garten -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/HxXki3WfbH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body"><h3>Garten</h3><p>Sabine Krapf</p></div>
+      </div>
+
+      <!-- Muschel kochen -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/NC5qRL1PQxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body"><h3>Muschel kochen</h3><p>Sabine Krapf</p></div>
+      </div>
+
     </div>
-    <p style="text-align:center;margin-top:40px;font-size:0.85rem;">
-      Hinweis: Platzhalter durch die echten YouTube-Videos ersetzen, z. B. mit <code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID"&gt;&lt;/iframe&gt;</code> anstelle der Vorschaubox.
-    </p>
   </div>
 </section>
 
